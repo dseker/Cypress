@@ -1,0 +1,24 @@
+{
+  "name": "cypressio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.8.3"
+  },
+  "scripts": {
+    "test": "./node_modules\\.bin\\cypress run",
+    "runtests": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dseker/Cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dseker/Cypress/issues"
+  },
+  "homepage": "https://github.com/dseker/Cypress#readme"
+}
