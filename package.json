@@ -6,7 +6,7 @@
   "scripts": {
     "test-junit": "cypress run --reporter junit --reporter-options 'mochaFile=junit-results/my-test-output.xml'",
     "test-multiple": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config.json",
-    "test": "npm run"
+    "test": "npx cypress run"
   },
   "repository": {
     "type": "git",
