@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "cypress": "^3.8.3"
-  },
   "scripts": {
-    "test": "./node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
-    "runtests": "npm run test --"
+    "test-junit": "cypress run --reporter junit --reporter-options 'mochaFile=junit-results/my-test-output.xml'",
+    "test-multiple": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config.json"
   },
   "repository": {
     "type": "git",
@@ -20,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/dseker/Cypress/issues"
   },
-  "homepage": "https://github.com/dseker/Cypress#readme"
+  "homepage": "https://github.com/dseker/Cypress#readme",
+  "devDependencies": {
+    "cypress": "^4.0.1",
+    "mocha": "^4.0.1",
+    "mocha-junit-reporter": "^1.13.0",
+    "mocha-multi-reporters": "^1.1.4"
+  }
 }
